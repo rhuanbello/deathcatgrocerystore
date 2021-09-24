@@ -116,8 +116,8 @@ main section ul li {
     transition: .2s;
     width: calc(100% / 5);
     cursor: pointer;
+    position: relative;
 }
-
 
 main section ul li:hover {
     transform: scale(1.05);
@@ -167,6 +167,23 @@ main section ul li .price input[type=number]::-webkit-inner-spin-button {
     opacity: 1;
 
 }
+
+main section ul li span.quantity {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: grid;
+    place-content: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    background-color: #41115F;
+    
+}
+
+
 
 main .shopping-cart {
     cursor: pointer;
@@ -241,4 +258,7 @@ main .shopping-cart i {
 
 }
 
-
+.border-purple {
+    border-color: #41115F;
+    
+}

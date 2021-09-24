@@ -1,4 +1,5 @@
 const productsContainer = document.querySelectorAll('ul li')
+const productQuantity = document.querySelectorAll('ul li .quantity')
 const productsNames = document.querySelectorAll('ul li .description .container p')
 const productsPrices = document.querySelectorAll('.price p:first-child')
 
@@ -214,13 +215,23 @@ const setItems = (product) => {
 
 // Capturando cada clique no container de produtos
 productsContainer.forEach((product, index) => {
-    
 
     product.addEventListener('click', () => {
         addToCart(listofProducts[index])
-        
+
+
+        product.classList.add('border-purple')
+        createQuantitySpan(product)
+
     })
 })
+
+const createQuantitySpan = (product) => {
+    const span = document.createElement('span')
+    span.innerText = '1'
+    span.classList.add('quantity')
+    product.appendChild(span);
+}
 
 // Executando a função de exibir a quantidade de itens no carrinho para ser sempre exibido (mesmo ao recarregar a página)
 onLoadShoppingCart()
