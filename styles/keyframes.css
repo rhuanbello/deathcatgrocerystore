@@ -1,0 +1,10 @@
+@keyframes showField {
+    from {
+        transform: translate(-75px);
+    }
+    to {
+        visibility: visible;
+        transform: translateX(-150px);
+    }
+
+}
