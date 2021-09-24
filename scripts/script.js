@@ -7,152 +7,152 @@ const listofProducts = [
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 2.68
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 2.57
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.85
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.98
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.90
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 5.78
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.98
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 5.88
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 6.05
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 5.58
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 5.76
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 5.67
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 5.41
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 5.56
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 5.99
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 5.81
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 5.48
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 5.12
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 5.35
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 5.76
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.89
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.52
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.92
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.45
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.40
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.35
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.89
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.96
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.46
     },
     {
         name: '',
         inCart: 0,
-        price: 3.68
+        price: 3.39
     }
 ]
 
