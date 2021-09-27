@@ -1,776 +1,980 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="https://kit.fontawesome.com/fb4d127565.js" crossorigin="anonymous"></script>
-    <script defer src="scripts/script.js"></script>
-    <title>Death Cat Grocery Store</title>
-</head>
-<body>
 
-    <header>
-        <div class="container">
-            <img src="assets/logo.svg" alt="">
-            <h1>Death Cat Grocery Store</h1>
-        </div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/carousel.css">
 
-    <section> 
-        <div class="banner">
-            <h2>Discover new amazing <br>
-            candies</h2>
-            <p>The most organic candies are here for you!</p>
-            <div class="button">
-                <a href="#">Shop Now</a>
+        <script src="https://kit.fontawesome.com/fb4d127565.js" crossorigin="anonymous"></script>
+
+        <title>Death Cat Grocery Store</title>
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="container">
+
+                <img src="assets/logo.svg" alt="">
+                <h1>Death Cat Grocery Store</h1>
+
             </div>
 
-        </div>
-        <img src="assets/banner.jpg" alt="">
-    </section>
+        </header>
 
-    <main>
+        <section>
+            
+            <section class="carousel-wrapper">
 
-        <section class="list">
+                <div class="slider"> <!-- slider START -->
 
-            <h2>Top Candies</h2>
-            <ul class="products">
-
-                <li>
-
-                    <div class="container">
-                        <img src="assets/products/dark-chocolate-bar.svg" alt="">
-                    </div>
-
-                    <div class="description">
-                        <div class="container">
-                            <p>Dark Chocolate Chocolate Bar</p>
+                    <div class="slides"> <!-- slides START -->
+        
+                        <!-- radio buttons START -->
+        
+                        <input type="radio" name="btn-radio" id="radio1">
+                        <input type="radio" name="btn-radio" id="radio2">
+                        <input type="radio" name="btn-radio" id="radio3">
+        
+                        <!-- radio buttons END -->
+        
+                        <!-- slide images START -->
+        
+                        <div class="slide first">
+                            <img src="./assets/carousel/chocolate-bars.png" alt="Chocolate Bars">
                         </div>
-                        <div class="price">
-                            <p>$2.68 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">Belgian dark chocolate finished with our signature swirl and modern dot</p>
+        
+                        <div class="slide">
+                            <img src="./assets/carousel/cookies.png" alt="Cookies">
                         </div>
-                    </div>
-
-                </li>
-
-                <li>
-
-                    <div class="container">
-                        <img src="assets/products/black-white-chocolate-bar.svg" alt="">
-                    </div>
-
-                    <div class="description">
-                        <div class="container">
-                            <p class="item-title">Black & White Chocolate Bar</p>
+        
+                        <div class="slide">
+                            <img src="./assets/carousel/cupcakes.png" alt="Cupcakes">
                         </div>
-                        <div class="price">
-                            <p>$2.57 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">Belgian dark chocolate covered with Belgian white chocolate, topped with chocolate sprinkles</p>
-                        </div>
-                    </div>
+        
+                        <!-- slide images END -->
+        
+                        <div class="navigation-auto"> <!-- auto navigation START -->
+        
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+        
+                        </div> <!-- auto navigation END -->
+        
+                        <div class="navigation-manual"> <!-- manual navigation START -->
+        
+                            <label for="radio1" class="manual-btn"></label>
+        
+                            <label for="radio2" class="manual-btn"></label>
+        
+                            <label for="radio3" class="manual-btn"></label>
+        
+                        </div> <!-- manual navigation END -->
+        
+                    </div> <!-- slides END -->
+        
+                </div> <!-- slider END -->
 
-                </li>
-
-                <li>
-
-                    <div class="container">
-                        <img src="assets/products/chocolate-chip-cookie.svg" alt="">
-                    </div>
-
-                    <div class="description">
-                        <div class="container">
-                            <p>Chocolate Chip Cookie</p>
-                        </div>
-                        <div class="price">
-                            <p>$3.85 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">morsels of semisweet chocolate chips folded into a buttery golden-brown cookie</p>
-                        </div>
-                    </div>
-
-                </li>
-
-                <li>
-
-                    <div class="container">
-                        <img src="assets/products/double-chocolate-cookie.svg" alt="">
-                    </div>
-
-                    <div class="description">
-                        <div class="container">
-                            <p>Double Chocolate Cookie</p>
-                        </div>
-                        <div class="price">
-                            <p>$3.98 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">fudgy dark chocolate cookie baked with fine cocoa powder and chocolate and loaded with white chocolate chips</p>
-                        </div>
-                    </div>
-
-                </li> 
-
-                <li>
-
-                    <div class="container">
-                        <img src="assets/products/sated-oatmeal-cornflake.svg" alt="">
-                    </div>
-
-                    <div class="description">
-                        <div class="container">
-                            <p>Salted Oatmeal Cornflake Cookie</p>
-                        </div>
-                        <div class="price">
-                            <p>$3.90 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">toasted rolled oats and cornflakes sprinkled with imported fleur de sel crystals</p>
-                        </div>
-                    </div>
-
-                </li> 
-
-            </ul>
-
-            <ul class="products">
-                <li>
-
-                    <div class="container">
-                        <img src="assets/products/pumpkin-cupcake.svg" alt="">
-                    </div>
-
-                    <div class="description">
-                        <div class="container">
-                            <p>Pumpkin</p>
-                        </div>
-                        <div class="price">
-                            <p>$5.78 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">pumpkin cake laced with fragrant ginger, clove, nutmeg and cinnamon, topped with sweet cinnamon cream cheese frosting</p>
-                        </div>
-                    </div>
-
-                </li>
-
-                <li>
-
-                    <div class="container">
-                        <img src="assets/products/red-veltet-cookie.svg" alt="">
-                    </div>
-
-                    <div class="description">
-                        <div class="container">
-                            <p>Red Velvet Cookie</p>
-                        </div>
-                        <div class="price">
-                            <p>$3.98 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">southern style light chocolate cookie with real buttermilk and cocoa, studded with white chocolate chips</p>
-                        </div>
-                    </div>
-
-                </li>
-
-                <li>
-
-                    <div class="container">
-                        <img src="assets/products/red-velvet-cupcake.svg" alt="">
-                    </div>
-
-                    <div class="description">
-                        <div class="container">
-                            <p>Red Velvet</p>
-                        </div>
-                        <div class="price">
-                            <p>$5.88 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">southern style light chocolate cake with cream cheese frosting</p>
-                        </div>
-                    </div>
-
-                </li>
-
-                <li>
-
-                    <div class="container">
-                        <img src="assets/products/dark-chocolate-cookie.svg" alt="">
-                    </div>
-
-                    <div class="description">
-                        <div class="container">
-                            <p>Dark Chocolate</p>
-                        </div>
-                        <div class="price">
-                            <p>$6.05 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">Belgian dark chocolate cake with bittersweet chocolate frosting and then rolled in dark chocolate sprinkles</p>
-                        </div>
-                    </div>
-
-                </li> 
-
-                <li>
-
-                    <div class="container">
-                        <img src="assets/products/salty-caramel-cupcake.svg" alt="">
-                    </div>
-
-                    <div class="description">
-                        <div class="container">
-                            <p>Salty Caramel</p>
-                        </div>
-                        <div class="price">
-                            <p>$5.58 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">caramel cake with a buttery caramel cream cheese frosting topped with fleur de sel</p>
-                        </div>
-                    </div>
-
-                </li> 
-
-            </ul>
-
-
+            </section>
+            
         </section>
 
-        <section class="list">
+        <main>
 
-            <h2>Cupcakes</h2>
-            <ul class="products">
+            <section class="list">
 
-                <li>
+                <h2>Top Candies</h2>
 
-                    <div class="container">
-                        <img src="assets/products/pumpkin-cupcake.svg" alt="">
-                    </div>
+                <ul class="products">
 
-                    <div class="description">
+                    <li>
+
                         <div class="container">
-                            <p>Pumpkin</p>
+                            <img src="assets/products/dark-chocolate-bar.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$5.76 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">pumpkin cake laced with fragrant ginger, clove, nutmeg and cinnamon, topped with sweet cinnamon cream cheese frosting</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Dark Chocolate Chocolate Bar</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$2.68 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">Belgian dark chocolate finished with our signature swirl and modern dot</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/red-velvet-cupcake.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Red Velvet</p>
+                            <img src="assets/products/black-white-chocolate-bar.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$5.67 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">southern style light chocolate cake with cream cheese frosting</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p class="item-title">Black & White Chocolate Bar</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$2.57 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">Belgian dark chocolate covered with Belgian white chocolate, topped with chocolate sprinkles</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/salty-caramel-cupcake.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Salty Caramel</p>
+                            <img src="assets/products/chocolate-chip-cookie.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$5.41 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">caramel cake with a buttery caramel cream cheese frosting topped with fleur de sel</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Chocolate Chip Cookie</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$3.85 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">morsels of semisweet chocolate chips folded into a buttery golden-brown cookie</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/pumpkin-spice-latte.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Pumpkin Spice Latte</p>
+                            <img src="assets/products/double-chocolate-cookie.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$5.56 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">pumpkin cake filled with marshmallow cream, topped with Cuban coffee frosting</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Double Chocolate Cookie</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$3.98 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">fudgy dark chocolate cookie baked with fine cocoa powder and chocolate and loaded with white chocolate chips</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li> 
+                    </li> 
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/dark-chocolate-cookie.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Birthday Red Velvet</p>
+                            <img src="assets/products/sated-oatmeal-cornflake.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$5.99 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">belgian dark chocolate cake with bittersweet chocolate frosting and then rolled in dark chocolate sprinkles</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Salted Oatmeal Cornflake Cookie</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$3.90 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">toasted rolled oats and cornflakes sprinkled with imported fleur de sel crystals</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li> 
+                    </li> 
 
-            </ul>
+                </ul>
 
-            <ul class="products">
-                <li>
+                <ul class="products">
 
-                    <div class="container">
-                        <img src="assets/products/sprinkle-cupcake.svg" alt="">
-                    </div>
+                    <li>
 
-                    <div class="description">
                         <div class="container">
-                            <p>Sprinkle</p>
+                            <img src="assets/products/pumpkin-cupcake.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$5.81 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">birthday cake topped with vanilla buttercream and colorful non pareil sprinkles</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Pumpkin</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$5.78 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">pumpkin cake laced with fragrant ginger, clove, nutmeg and cinnamon, topped with sweet cinnamon cream cheese frosting</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/vanilla.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Vanilla</p>
+                            <img src="assets/products/red-veltet-cookie.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$5.48 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">vanilla cake with creamy vanilla frosting and then covered/rolled in vanilla sprinkles</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Red Velvet Cookie</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$3.98 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">southern style light chocolate cookie with real buttermilk and cocoa, studded with white chocolate chips</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/banana.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Banana</p>
+                            <img src="assets/products/red-velvet-cupcake.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$5.12 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">fresh banana cake with creamy vanilla frosting</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Red Velvet</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$5.88 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">southern style light chocolate cake with cream cheese frosting</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/lemon-blueberry.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Lemon Blueberry</p>
+                            <img src="assets/products/dark-chocolate-cookie.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$5.35 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">gluten free lemon cake studded with wild blueberries topped with lemon cream cheese frosting</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Dark Chocolate</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$6.05 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">Belgian dark chocolate cake with bittersweet chocolate frosting and then rolled in dark chocolate sprinkles</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li> 
+                    </li> 
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/chocolate-marshmallow.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Chocolate Marshmallow</p>
+                            <img src="assets/products/salty-caramel-cupcake.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$5.76 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">belgian dark chocolate cake and marshmallow cream with bittersweet chocolate ganache</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Salty Caramel</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$5.58 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">caramel cake with a buttery caramel cream cheese frosting topped with fleur de sel</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li> 
+                    </li> 
 
-            </ul>
+                </ul>
 
 
-        </section>
+            </section>
 
-        <section class="list">
+            <section class="list">
 
-            <h2>Cookies, Brownies & Chocolate Bars</h2>
-            <ul class="products">
+                <h2>Cupcakes</h2>
 
-                <li>
+                <ul class="products">
 
-                    <div class="container">
-                        <img src="assets/products/chocolate-chip-cookie.svg" alt="">
-                    </div>
+                    <li>
 
-                    <div class="description">
                         <div class="container">
-                            <p>Chocolate Chip Cookie</p>
+                            <img src="assets/products/pumpkin-cupcake.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$3.89 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">morsels of semisweet chocolate chips folded into a buttery golden-brown cookie</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Pumpkin</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$5.76 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">pumpkin cake laced with fragrant ginger, clove, nutmeg and cinnamon, topped with sweet cinnamon cream cheese frosting</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/sated-oatmeal-cornflake.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Salted Oatmeal Cornflake Cookie</p>
+                            <img src="assets/products/red-velvet-cupcake.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$3.52 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">toasted rolled oats and cornflakes sprinkled with imported fleur de sel crystals</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Red Velvet</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$5.67 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">southern style light chocolate cake with cream cheese frosting</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/red-veltet-cookie.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Red Velvet Cookie</p>
+                            <img src="assets/products/salty-caramel-cupcake.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$3.92 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">southern style light chocolate cookie with real buttermilk and cocoa, studded with white chocolate chips</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Salty Caramel</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$5.41 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">caramel cake with a buttery caramel cream cheese frosting topped with fleur de sel</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/chocolate-chip-cookie.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Gluten Free Chocolate Chip Cookie</p>
+                            <img src="assets/products/pumpkin-spice-latte.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$3.45 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">morsels of semisweet chocolate chips folded into a buttery golden-brown cookie</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Pumpkin Spice Latte</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$5.56 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">pumpkin cake filled with marshmallow cream, topped with Cuban coffee frosting</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li> 
+                    </li> 
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/double-chocolate-cookie.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Double Chocolate Cookie</p>
+                            <img src="assets/products/dark-chocolate-cookie.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$3.40 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">fudgy dark chocolate cookie baked with fine cocoa powder and chocolate and loaded with white chocolate chips</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Birthday Red Velvet</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$5.99 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">belgian dark chocolate cake with bittersweet chocolate frosting and then rolled in dark chocolate sprinkles</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li> 
+                    </li> 
 
-            </ul>
+                </ul>
 
-            <ul class="products">
-                <li>
+                <ul class="products">
 
-                    <div class="container">
-                        <img src="assets/products/fudge-brownie.svg" alt="">
-                    </div>
+                    <li>
 
-                    <div class="description">
                         <div class="container">
-                            <p>Fudge Brownie</p>
+                            <img src="assets/products/sprinkle-cupcake.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$3.35 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">dense and rich valrhona dark chocolate brownie with a dense, gooey cake hidden beneath a lightly crisp outside</p>
+
+                        <div class="description">
+                            
+                            <div class="container">
+                                <p>Sprinkle</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$5.81 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">birthday cake topped with vanilla buttercream and colorful non pareil sprinkles</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/3-pack-of-frost.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>3 Pack of Frosting</p>
+                            <img src="assets/products/vanilla.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$3.89 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">Set of 3: 1 Cream Cheese <br> 1 Dark Chocolate Buttercream <br> 1 Vanilla Buttercream</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Vanilla</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$5.48 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">vanilla cake with creamy vanilla frosting and then covered/rolled in vanilla sprinkles</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/frost-a-roos.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Frost-A-Roos</p>
+                            <img src="assets/products/banana.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$3.96 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">3 cookies and 3 frosting shots</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Banana</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$5.12 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">fresh banana cake with creamy vanilla frosting</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/black-white-chocolate-bar.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p class="item-title">Black & White Chocolate Bar</p>
+                            <img src="assets/products/lemon-blueberry.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$3.46 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">Belgian dark chocolate covered with Belgian white chocolate, topped with chocolate sprinkles</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Lemon Blueberry</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$5.35 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">gluten free lemon cake studded with wild blueberries topped with lemon cream cheese frosting</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li> 
+                    </li> 
 
-                <li>
+                    <li>
 
-                    <div class="container">
-                        <img src="assets/products/dark-chocolate-bar.svg" alt="">
-                    </div>
-
-                    <div class="description">
                         <div class="container">
-                            <p>Dark Chocolate Chocolate Bar</p>
+                            <img src="assets/products/chocolate-marshmallow.svg" alt="">
                         </div>
-                        <div class="price">
-                            <p>$3.39 <span>/un</span></p>
-                            <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
-                            <a href="pages/form.html">
-                                <i class="fas fa-shopping-cart"></i>
-                                Add to cart
-                            </a>
-                            <p class="item-description">Belgian dark chocolate finished with our signature swirl and modern dot</p>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Chocolate Marshmallow</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$5.76 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">belgian dark chocolate cake and marshmallow cream with bittersweet chocolate ganache</p>
+
+                            </div>
+
                         </div>
-                    </div>
 
-                </li> 
+                    </li> 
 
-            </ul>
+                </ul>
+
+            </section>
+
+            <section class="list">
+
+                <h2>Cookies, Brownies & Chocolate Bars</h2>
+
+                <ul class="products">
+
+                    <li>
+
+                        <div class="container">
+                            <img src="assets/products/chocolate-chip-cookie.svg" alt="">
+                        </div>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Chocolate Chip Cookie</p>
+                            </div>
+
+                            <div class="price">
+
+                                <p>$3.89 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">morsels of semisweet chocolate chips folded into a buttery golden-brown cookie</p>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <div class="container">
+                            <img src="assets/products/sated-oatmeal-cornflake.svg" alt="">
+                        </div>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Salted Oatmeal Cornflake Cookie</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$3.52 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">toasted rolled oats and cornflakes sprinkled with imported fleur de sel crystals</p>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <div class="container">
+                            <img src="assets/products/red-veltet-cookie.svg" alt="">
+                        </div>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Red Velvet Cookie</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$3.92 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">southern style light chocolate cookie with real buttermilk and cocoa, studded with white chocolate chips</p>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <div class="container">
+                            <img src="assets/products/chocolate-chip-cookie.svg" alt="">
+                        </div>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Gluten Free Chocolate Chip Cookie</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$3.45 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">morsels of semisweet chocolate chips folded into a buttery golden-brown cookie</p>
+
+                            </div>
+
+                        </div>
+
+                    </li> 
+
+                    <li>
+
+                        <div class="container">
+                            <img src="assets/products/double-chocolate-cookie.svg" alt="">
+                        </div>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Double Chocolate Cookie</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$3.40 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">fudgy dark chocolate cookie baked with fine cocoa powder and chocolate and loaded with white chocolate chips</p>
+
+                            </div>
+
+                        </div>
+
+                    </li> 
+
+                </ul>
+
+                <ul class="products">
+
+                    <li>
+
+                        <div class="container">
+                            <img src="assets/products/fudge-brownie.svg" alt="">
+                        </div>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Fudge Brownie</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$3.35 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">dense and rich valrhona dark chocolate brownie with a dense, gooey cake hidden beneath a lightly crisp outside</p>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <div class="container">
+                            <img src="assets/products/3-pack-of-frost.svg" alt="">
+                        </div>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>3 Pack of Frosting</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$3.89 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">Set of 3: 1 Cream Cheese <br> 1 Dark Chocolate Buttercream <br> 1 Vanilla Buttercream</p>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <div class="container">
+                            <img src="assets/products/frost-a-roos.svg" alt="">
+                        </div>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Frost-A-Roos</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$3.96 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">3 cookies and 3 frosting shots</p>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <div class="container">
+                            <img src="assets/products/black-white-chocolate-bar.svg" alt="">
+                        </div>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p class="item-title">Black & White Chocolate Bar</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$3.46 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">Belgian dark chocolate covered with Belgian white chocolate, topped with chocolate sprinkles</p>
+
+                            </div>
+
+                        </div>
+
+                    </li> 
+
+                    <li>
+
+                        <div class="container">
+                            <img src="assets/products/dark-chocolate-bar.svg" alt="">
+                        </div>
+
+                        <div class="description">
+
+                            <div class="container">
+                                <p>Dark Chocolate Chocolate Bar</p>
+                            </div>
+
+                            <div class="price">
+                                <p>$3.39 <span>/un</span></p>
+                                <input type="number" id="option1" min="0" max="10" value="0" onkeydown="return false">
+                                <a href="pages/form.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Add to cart
+                                </a>
+                                <p class="item-description">Belgian dark chocolate finished with our signature swirl and modern dot</p>
+
+                            </div>
+
+                        </div>
+
+                    </li> 
+
+                </ul>
 
 
-        </section>
+            </section>
 
-        <div class="shopping-cart">
-            <a href="pages/form.html">
-                <i class="fas fa-shopping-cart"></i>
-                <span>0</span>
-            </a>
-        </div>
+            <div class="shopping-cart">
 
-    </main>
+                <a href="pages/form.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>0</span>
+                </a>
+
+            </div>
+
+        </main>
+        
+        <script defer src="./scripts/script.js" defer></script>
+        <script src="./scripts/carousel.js" defer></script>
+
+    </body>
     
-    
-</body>
 </html>
