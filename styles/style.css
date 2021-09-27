@@ -149,24 +149,29 @@ main section.list h2 {
 main section ul li {
 
     width: calc(100% / 5);
+    min-height: 370px;
 
     margin-right: 3.5%;
-    padding: 20px 10px 10px 10px;
+
+}
+
+.item-wrapper {
+
+
+    height: fit-content;
+
+    padding: 20px 10px;
 
     border: 2px solid #DDDFE2;
     border-radius: 5px;
 
     transition: .2s;
-<<<<<<< HEAD
-    
-=======
-    width: calc(100% / 5);
     cursor: pointer;
     position: relative;
->>>>>>> 33db1c83ca0db022907ee122e8ee0e405e727178
+
 }
 
-main section ul li:hover {
+main section ul li .item-wrapper:hover {
 
     cursor: pointer;
 
@@ -176,10 +181,8 @@ main section ul li:hover {
 
 }
 
-
-
 main section ul li .description p {
-    
+
     margin-top: 5px;
 
     font-size: 14px;
@@ -270,28 +273,6 @@ main .shopping-cart {
     cursor: pointer;
     
     border-radius: 50%;
-<<<<<<< HEAD
-
-    background-color:var(--clr-highlight-dark);
-
-}
-
-main .shopping-cart::before {
-
-    content: '1';
-
-    position: absolute;
-    bottom: 40px;
-    left: 30px;
-    
-    width: 20px;
-    height: 20px;
-
-    font-size: 14px;
-    text-align: center;
-    color: var(--clr-primary);
-    
-=======
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,15 +295,12 @@ main .shopping-cart span {
     min-height: 20px;
     padding: 1px 5px;
     background-color: #DDDFE2;
->>>>>>> 33db1c83ca0db022907ee122e8ee0e405e727178
     border-radius: 50%;
     
     background-color: var(--clr-secondary);
 
 }
 
-<<<<<<< HEAD
-=======
 .shopping-cart a{
     display: flex;
     justify-content: center;
@@ -347,7 +325,6 @@ main .shopping-cart span {
 }
 
 
->>>>>>> 33db1c83ca0db022907ee122e8ee0e405e727178
 main .shopping-cart i {
 
     color: var(--clr-secondary);
@@ -356,8 +333,22 @@ main .shopping-cart i {
 
 
 .price .item-description {
+
+    display: none;
+
+    padding-top: 6px;
+
     font-size: 12px;
+    line-height: 15px;
+    text-transform: capitalize;
     color: var(--clr-text-opaque);
+
+}
+
+
+main section ul .item-wrapper:hover .item-description {
+
+    display: block;
 
 }
 
