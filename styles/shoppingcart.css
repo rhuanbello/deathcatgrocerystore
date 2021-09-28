@@ -105,22 +105,20 @@ main.products-container {
 }
 
 header.products-header {
+    
     display: flex;
     width: 100%;
     border-bottom: 1px solid #BBBBBB;
     justify-content: space-between;
     padding-left: 200px;
-
+    margin-bottom: .5rem;
 }
 
-.product img {
-    /* margin-left: 150px; */
-}
 
 header.products-header h2 {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;  
 
 }
 
@@ -153,7 +151,7 @@ section.products .product {
     
 }
 
-section.products .product i {
+section.products .product i.fa-trash-alt {
     font-size: 16px;
     color: #6B2878;
     cursor: pointer;
@@ -161,7 +159,14 @@ section.products .product i {
     padding: 10px;
     margin-left: 50px;
     border-radius: 10%;
+    
 }
+
+section.products .product i.fa-trash-alt:hover {
+    background-color: #6B2878;
+    color: #fff;
+}
+
 
 section.products .product img {
     width: 12%;
@@ -185,33 +190,37 @@ section.products .product span {
 .totalFinal .totalFinalTitle {
     font-size: 28px;
     
+    
 }
 
 .totalFinal p {
     font-size: 24px;
+    font-weight: 600;
 }
 
 .product .quantity {
     display: flex;
     align-items: center;
-    
+    /* justify-content: space-between; */
+    gap: 2rem;
+    margin-right: 1rem;
 }
 
 .product .quantity i {
-    border-radius: 50%;
-    border: 2px solid #6B2878;
-    padding: 5px;
-    font-size: 12px !important;
+    font-size: 12px;
+    color: #6B2878;
+    cursor: pointer;
+    border: 1px solid #6B2878;
+    padding: 10px;
+    border-radius: 10%;
     
 }
 
-.product .quantity i:nth-child(1) {
-    margin-right: 10px;
+.product .quantity i:hover {
+    background-color: #6B2878;
+    color: #fff;
 }
 
-.product .quantity i:nth-child(2) {
-    margin-left: 10px;
-}
 
 main section ul li span.quantity {
     position: absolute;
