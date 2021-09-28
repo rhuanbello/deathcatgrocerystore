@@ -29,11 +29,9 @@ body {
 }
 
 header {
-
     position: sticky;
     top: 0;
     z-index: 20;
-
     width: 100%;
     height: 120px;
 
@@ -42,16 +40,9 @@ header {
 }
 
 header .container {
-
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 10px 20px;
-    grid-template-areas: 
-        'logo title'
-        'logo menu';
-
-    place-content: center;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 80%;
 
     margin: 0 auto;
@@ -59,9 +50,6 @@ header .container {
 }
 
 header img {
-
-    grid-area: logo;
-
     width: 80px;
 
     padding: 1rem 0;
@@ -70,35 +58,33 @@ header img {
 
 header h1 {
     
-    grid-area: title;
-
-    padding-top: 18px;
     margin: 0 auto;
 
-    font-size: 36px;
+    font-size: 32px;
     color: var(--clr-secondary);
 
 }
 
 header .header-nav {
-
-    grid-area: menu;
-
     position: relative;
 
 }
 
 .header-nav .products {
-
-    display: block;
-
+    display: flex;
+    justify-content: space-between;
     width: 200px;
-
+    background-color: var(--clr-highlight-dark);
     padding: 10px;
-
+    border-radius: 5px;
     text-decoration: none;
     color: var(--clr-secondary);
 
+}
+
+.header-nav .products i {
+    font-size: 14px;
+    
 }
 
 .header-nav:hover .products-dropdown-menu {
@@ -136,15 +122,18 @@ header .header-nav {
     display: flex;
     align-items: center;
     justify-self: flex-start;
-
     height: 35px;
     width: 200px;
-
+    font-size: 14px;
     padding: 10px;
+    border: 1px solid var(--clr-highlight-dark);
+    background-color: #000;
 
-    border-bottom: 1px solid var(--clr-secondary);
+}
 
+.products-dropdown-menu ul li:hover {
     background-color: var(--clr-highlight-dark);
+    cursor: pointer;
 
 }
 
@@ -156,12 +145,6 @@ header .header-nav {
 
 }
 
-.products-dropdown-menu ul li a:hover {
-
-    font-weight: bold;
-    color: var(--clr-primary);
-
-}
 
 section {
 
@@ -178,6 +161,40 @@ section {
 section a {
 
     text-decoration: none;
+
+}
+
+div#top {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.top-arrow {
+
+    width: 25px;
+    height: 25px;
+    
+}
+
+section .back-to-top {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 850px;
+    left: 50px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    background-color: var(--clr-highlight-dark);
 
 }
 
@@ -210,9 +227,7 @@ section .banner p {
 }
 
 section .banner .button {
-
     margin-top: 20px;
-
 }
 
 section .banner a {
@@ -231,11 +246,8 @@ section .banner a {
 }
 
 main section.list {
-
     display: block;
-
     padding-top: 0;
-
 }
 
 main section ul {
@@ -264,6 +276,7 @@ main section ul li {
 
 }
 
+
 .item-wrapper {
 
 
@@ -280,6 +293,16 @@ main section ul li {
 
 }
 
+.item-wrapper:hover::before {
+
+    content: '🤍';
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
 main section ul li .item-wrapper:hover {
 
     cursor: pointer;
@@ -292,7 +315,7 @@ main section ul li .item-wrapper:hover {
 
 main section ul li .description p {
 
-    margin-top: 5px;
+    padding: 5px 0;
 
     font-size: 14px;
     font-weight: 500;
@@ -314,7 +337,6 @@ main section ul li .price input[type="number"]{
     
     border: 1px solid var(--clr-highlight-dark);
     border-radius: 5px;
-
 }
 
 main section ul li .price a {
@@ -360,8 +382,7 @@ main section ul li span.quantity {
     border-radius: 50%;
     font-size: 12px;
     color: #fff;
-    background-color: #41115F;
-    
+    background-color: var(--clr-highlight-dark);
 }
 
 
@@ -380,7 +401,7 @@ main .shopping-cart {
     height: 50px;
 
     cursor: pointer;
-    
+    background-color: var(--clr-highlight-dark);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -394,7 +415,6 @@ main .shopping-cart {
 
 }
 
-
 main .shopping-cart span {
     color: #000;
     font-size: 14px;
@@ -403,10 +423,10 @@ main .shopping-cart span {
     min-width: 20px;
     min-height: 20px;
     padding: 1px 5px;
-    background-color: #DDDFE2;
-    border-radius: 50%;
-    
     background-color: var(--clr-secondary);
+    border-radius: 50%;
+    bottom: 40px;
+    left: 30px;
 
 }
 
@@ -441,19 +461,18 @@ main .shopping-cart i {
 }
 
 
+
 .price .item-description {
 
     display: none;
 
-    padding-top: 6px;
-
+    padding-top: 8px;
     font-size: 12px;
     line-height: 15px;
     text-transform: capitalize;
     color: var(--clr-text-opaque);
 
 }
-
 
 main section ul .item-wrapper:hover .item-description {
 
@@ -462,6 +481,6 @@ main section ul .item-wrapper:hover .item-description {
 }
 
 .border-purple {
-    border-color: #41115F;
+    border-color: var(--clr-highlight-dark);
     
 }
