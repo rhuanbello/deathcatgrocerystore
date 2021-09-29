@@ -3,7 +3,7 @@ const productQuantity = document.querySelectorAll('ul li .quantity')
 const productsNames = document.querySelectorAll('ul li .description .container p')
 const productsPrices = document.querySelectorAll('.price p:first-child')
 const backtoTop = document.querySelector('section .back-to-top')
-const firstTitleHeight = document.querySelector('h2#top-candies')
+const carousel = document.querySelector('.carousel-wrapper')
 
 // Esta array precisa (por enquanto) ter a mesma quantidade de produtos que existem na página inicial (30)
 const listofProducts = [
@@ -403,12 +403,10 @@ const manageQuantity = () => {
 
 }
 
-const showButton = () => window.scrollY >= firstTitleHeight.getBoundingClientRect().top ? backtoTop.classList.add('show') : backtoTop.classList.remove('show')
+const showButton = () => window.scrollY >= 600 ? backtoTop.classList.add('show') : backtoTop.classList.remove('show')
+window.addEventListener('scroll', () => showButton())
 
 displayCart()
 onLoadCartNumbers()
 showButton()
 
-window.addEventListener('scroll', function() {
-    showButton()
-})
