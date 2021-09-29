@@ -2,7 +2,8 @@ const productsContainer = document.querySelectorAll('ul.products li .item-wrappe
 const productQuantity = document.querySelectorAll('ul li .quantity')
 const productsNames = document.querySelectorAll('ul li .description .container p')
 const productsPrices = document.querySelectorAll('.price p:first-child')
-
+const backtoTop = document.querySelector('section .back-to-top')
+const firstTitleHeight = document.querySelector('h2#top-candies')
 
 // Esta array precisa (por enquanto) ter a mesma quantidade de produtos que existem na página inicial (30)
 const listofProducts = [
@@ -196,7 +197,7 @@ productsContainer.forEach((product, index) => {
         totalCost(listofProducts[index])
 
         product.classList.add('border-purple') // alterando a corda borda para roxo ao clicar no produto
-        createQuantitySpan(product) // criando span ao clicar no produto
+        // createQuantitySpan(product) // criando span ao clicar no produto
 
     })
 })
@@ -306,16 +307,16 @@ function displayCart() {
     manageQuantity()
 }
 
-const createQuantitySpan = (product) => {
+// const createQuantitySpan = (product) => {
 
-    const span = document.createElement('span')
+//     const span = document.createElement('span')
 
-    span.textContent = 1
+//     span.textContent = 1
 
-    span.classList.add('quantity')
-    product.appendChild(span);
+//     span.classList.add('quantity')
+//     product.appendChild(span);
     
-}
+// }
 
 const totalCost = (product, action) => {
    
@@ -402,5 +403,12 @@ const manageQuantity = () => {
 
 }
 
+const showButton = () => window.scrollY >= firstTitleHeight.getBoundingClientRect().top ? backtoTop.classList.add('show') : backtoTop.classList.remove('show')
+
 displayCart()
 onLoadCartNumbers()
+showButton()
+
+window.addEventListener('scroll', function() {
+    showButton()
+})

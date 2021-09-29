@@ -26,3 +26,17 @@
         transform: translateX(0px);
     }
 }
+
+@keyframes showButton {
+    from {
+        transform: translateY(300px);
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}

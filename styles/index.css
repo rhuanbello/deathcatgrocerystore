@@ -39,6 +39,11 @@ header {
     
 }
 
+a {
+    text-decoration: none;
+
+}
+
 header .container {
     display: flex;
     align-items: center;
@@ -158,45 +163,34 @@ section {
 
 }
 
-section a {
-
-    text-decoration: none;
-
-}
-
-div#top {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-}
-
-.top-arrow {
-
-    width: 25px;
-    height: 25px;
+section .back-to-top {
+    position: fixed;
+    bottom: 42px;
+    left: 30px;
+    transition: .2s;
+    display: none;
     
 }
 
-section .back-to-top {
+section .back-to-top:hover {
+   transform: scale(1.05);
+   
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: fixed;
-    top: 850px;
-    left: 50px;
-
-    width: 60px;
-    height: 60px;
-
-    border-radius: 50%;
-
-    background-color: var(--clr-highlight-dark);
+section .back-to-top.show {
+    display: block;
+    animation: showButton .7s;
 
 }
+
+section .back-to-top a i{
+    color: #fff;
+    padding: 16px;
+    background-color: var(--clr-highlight-dark);
+    border-radius: 50%;
+    font-size: 18px;
+}
+
 
 section .banner {
 
@@ -296,7 +290,6 @@ main section ul li {
 .item-wrapper:hover::before {
 
     content: '🤍';
-
     position: absolute;
     top: 10px;
     right: 10px;
@@ -371,7 +364,7 @@ main section ul li .price input[type=number]::-webkit-inner-spin-button {
 
 }
 
-main section ul li span.quantity {
+/* main section ul li span.quantity {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -383,7 +376,7 @@ main section ul li span.quantity {
     font-size: 12px;
     color: #fff;
     background-color: var(--clr-highlight-dark);
-}
+} */
 
 
 
